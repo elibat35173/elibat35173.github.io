@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+        <link href="images/EAB-logo_favicon.png" rel="icon">
+    
+        <link rel="icon" type="image/x-icon" href="images/EAB-logo_favicon.png">
+        <meta name="image" property="og:image" content="http://elisebattisti.com/images/portfolio-thumbnail-logo.jpg">
+        <meta name="title" property="og:title" content="Elise Battisti's Portfolio">
+        
+    <style>
+    
+    /* PRELOADER */
+        
+            #preloader{
+                height:100vh; 
+                width:100%; 
+                position:fixed; 
+                background-color: #000; 
+                text-align:center; 
+                padding-top:30%; 
+                z-index:2;
+            }
+            
+            @keyframes spin{ 
+                0%{transform:rotate(0deg);}
+                100%{transform:rotate(360deg);}
+             }
+            
+            #preloader img{
+                animation: spin 1s linear infinite;
+            }
+        
+    /* GENERAL LAYOUT */
+            
+            html, body {
+                position:relative;
+                overflow-x:hidden;
+            }
+            
+            *{
+                margin:0; 
+                padding:0;
+                
+            }
+            
+            body{ 
+                font-family: 'Raleway', sans-serif;
+                color: #fff;
+                background-color: #000;
+                overflow-x: hidden;
+            }
+        
+    /* LINKS */  
+        
+            a:link {
+                color: white;
+                text-decoration: none;
+            }
+
+                
+            a:visited {
+                color: white;
+                text-decoration: none;
+            }
+
+                
+            a:hover {
+                color: white;
+                text-decoration: none;
+            }
+
+                
+            a:active {
+                color: white;
+                text-decoration: none;
+            }
+        
+            .disable-select {
+                user-select: none; 
+                -webkit-user-select: none; 
+                -khtml-user-select: none; 
+                -moz-user-select: none; 
+                -ms-user-select: none; 
+            }
+        
+   /* TEXT */ 
+        
+            h3 {
+                font-weight: 200;
+                font-size: 25px;
+                position:absolute;
+                right:5%;
+                top:5%;
+                text-align: right;
+            }
+        
+    /* HEADER */   
+        
+            header { 
+                display: block;
+            }
+            
+            #logo {
+                width: 200px;
+                margin: 3%;
+            }
+            
+    /* CONTENT */  
+        
+            #gallery {
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:50px;
+                column-count:2;
+                width:1000px;
+                column-gap: 5%;
+                    
+            }
+                
+            #gallery img{
+                max-width:100%;
+                margin:5%;
+                border: 3px solid transparent;
+            }
+            
+            #gallery img:hover {        
+                border: 3px solid #fff;
+            }
+        
+    </style>
+        
+</head>
+    
+<body>
+        
+        <div id="preloader">
+        
+            <img src="images/loading-circle-white.jpg" alt=""/> 
+        
+        </div>
+        
+    <header>
+        
+        <a href="index.html"><img src="images//EAB-logo-transparent.gif" alt=""  id="logo"/></a>
+        
+        <h3><a href="aboutme.html"> ABOUT ME <br><br></a><a href="index.html"> MY WORK </a></h3>
+        
+    </header>
+        
+        <div class="disable-select">
+        <div id="gallery" >
+            <a href="hindsight.html"  ><img src="images/covers/hindsightcover.jpg" alt="Hindsight Project Book"/></a>
+            <a href="tomlinsons.html" ><img src="images/covers/tomlinsonscover.jpg" alt="Tomlinsons Project Book"/></a>
+            <a href="casestudies.html"  ><img src="images/covers/casestudiescover.jpg" alt="Case Studies"/></a>
+            <a href="tecovas.html"  ><img src="images/covers/tecovascover.jpg" alt="Tecovas Project Book"/></a>
+        </div>
+        </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+        
+    <script>
+            
+        $(window).on('load', function() {
+                $('#preloader').fadeOut(500); 
+            });
+            
+    </script>
+</body>
+
+</html>
